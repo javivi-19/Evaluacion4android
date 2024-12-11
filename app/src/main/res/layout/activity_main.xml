@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_estado_luces"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Indicador de Conexión -->
+    <TextView
+        android:id="@+id/connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estado_conectado"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Tarjeta de Estado -->
+    <TextView
+        android:id="@+id/light_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/luces_apagadas"
+        android:background="@android:color/holo_blue_light"
+        android:padding="16dp"
+        android:layout_below="@id/connection_status"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <!-- Botones de Control -->
+    <Button
+        android:id="@+id/button_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/encender_luces"
+        android:layout_below="@id/light_status"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/button_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apagar_luces"
+        android:layout_below="@id/button_on"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Gráfico Simple (Placeholder) -->
+    <TextView
+        android:id="@+id/graph_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/button_off"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/grafico_placeholder"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

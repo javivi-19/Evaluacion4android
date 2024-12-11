@@ -1,0 +1,8 @@
+<resources>
+    <string name="titulo_estado_luces">Estado de Luces</string>
+    <string name="estado_conectado">Conectado</string>
+    <string name="luces_apagadas">Luces Apagadas</string>
+    <string name="encender_luces">Encender Luces</string>
+    <string name="apagar_luces">Apagar Luces</string>
+    <string name="grafico_placeholder">Gráfico en Tiempo Real (Placeholder)</string>
+</resources>
